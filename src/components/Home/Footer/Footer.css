@@ -1,0 +1,31 @@
+.footer-container{
+    background-color: rgb(10, 99, 99);
+}
+
+.left-container img{
+    width: 100px;
+    height: 50px;
+}
+.footer-menu-container ul{
+    list-style: none;
+}
+
+ul li{
+    color: burlywood;
+    margin-top: 40px;
+}
+
+@media only  screen and  (max-width:991px){
+    .footer-container{
+        padding: 10px 20px;
+        flex-direction: column;
+
+    }
+}
+@media only  screen and  (max-width:688px){
+    .footer-container{
+        padding: 10px 20px;
+        flex-direction: column;
+
+    }
+}

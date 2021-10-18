@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Maternity Services",
+        "price": 10000,
+        "description": "West Chester Hospital has been verified as an “Emergency Center of Excellence” by Emergency Excellence, an organization specializing in emergency department benchmarking. As a Level III Trauma Center, and utilizing the same physicians as the University of Cincinnati Medical Center’s Level I Trauma Center, our emergency staff is equipped to address the most emergent and complex medical cases.",
+        "Img": "https://i.ibb.co/sqkyGTs/image.jpg",
+        "specialist": "harry siomone"
+    },
+    {
+        "id": 2,
+        "name": "Orthopaedic Surgery",
+        "price": 15000,
+        "description": "West Chester Hospital’s newly built maternity unit includes private, spacious delivery suites with overnight accommodations for guests, nearby Caesarean-section operating rooms, and triage rooms.",
+        "Img": "https://i.ibb.co/6nNVbNG/orthopedik.jpg",
+        "specialist": "chales braavo mbs"
+    },
+    {
+        "id": 3,
+        "name": "Robotic Surgery",
+        "price": 10000,
+        "description": "West Chester Hospital’s newly built maternity unit includes private, spacious delivery suites with overnight accommodations for guests, nearby Caesarean-section operating rooms, and triage rooms.",
+        "Img": "https://i.ibb.co/Wzm52Z8/cmr-surgical-versius-clinical-setup-4-arms-00013-2.jpg",
+        "specialist": "kayne tie mbbs serjary"
+    },
+    {
+        "id": 4,
+        "name": "MRI",
+        "price": 5000,
+        "description": "West Chester Hospital’s newly built maternity unit includes private, spacious delivery suites with overnight accommodations for guests, nearby Caesarean-section operating rooms, and triage rooms.",
+        "Img": "https://i.ibb.co/52V4nbV/gxp3tcjs-1377055247.jpg",
+        "specialist": "mbbs serwilliam kety jary"
+    },
+    {
+        "id": 5,
+        "name": "ECG",
+        "price": 5000,
+        "description": "An electrocardiogram (ECG) is a simple test that can be used to check your hearts rhythm and electrical activity. Sensors attached to the skin are used to detect the electrical signals produced by your heart each time it beats.",
+        "Img": "https://i.ibb.co/S0hR5mx/Monitoring-of-ECG-and-saturation-O2-in-the-patient-in-the-operating-room.jpg",
+        "specialist": "mbbs  jakes jacov"
+    },
+    {
+        "id": 6,
+        "name": "covid-19 ",
+        "price": 500,
+        "description": "Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment. However, some will become seriously ill and require medical attention.",
+        "Img": "https://i.ibb.co/jwg60xM/coronavirus-2.jpg",
+        "specialist": "mbbs  lorry  jonson"
+    }
+]

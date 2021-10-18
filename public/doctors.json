@@ -1,0 +1,44 @@
+[
+    {
+        "id": 646633,
+        "name": "Dr. William",
+        "schedule": "2pm-5pm",
+        "description": "Dr. Abdu got his accreditation in 1985 from Tufts University. He is a pioneer in the study and treatment of spine-related conditions. He hones surgery of the Spine, including Cervical, Thoracic and Lumbar Disorders, Disk Herniation, Spinal Stenosis, Spondylolisthesis, Spondylotic Myelopathy, Spinal Cord Injury, and Spine Trauma. Also, he had discovered many new techniques for spine treatment.",
+        "img": "https://i.ibb.co/1T9NZXM/Dr-William.png"
+    },
+    {
+        "id": 64664747,
+        "name": "Dr. Myles. B. Abbott",
+        "schedule": "2pm-5pm",
+        "description": "Dr. Myles currently practices at East Bay Pediatric & Medical Group and is affiliated with Alta Bates Summit Medical Center Alta Bates Campus and Children’s Hospital & Research Center Oakland.",
+        "img": "https://i.ibb.co/MCYkLpT/Dr-Myles-B-Abbot.png"
+    },
+    {
+        "id": 335664747,
+        "name": "Dr. Fouad. M. Abbas",
+        "schedule": "2pm-5pm",
+        "description": "Dr. Abbas graduated from the University of Maryland School of Medicine in 1986. Currently, he is affiliated with Medstar Harbor Hospital and Sinai Hospital Of Baltimore.",
+        "img": "https://i.ibb.co/GT1FzvR/Fouad-Abbas.jpg"
+    },
+    {
+        "id": 3356632,
+        "name": "Dr. Khalid Abbed",
+        "schedule": "4pm-8pm",
+        "description": "Dr. Khalid obtained his bachelor’s degree in Biological Sciences from the University of Illinois in Champaign-Urbana in 1993. He continued his education in the same University and received his Doctor of Medicine degree with Honors in 1999. Currently, he is working at Yale as a Director of the Spine Surgery Department. Many consider him the best doctor in the world.",
+        "img": "https://i.ibb.co/5hLPDm4/Dr-Khalid.png"
+    },
+    {
+        "id": 336373732,
+        "name": "Dr. Naresh Trehan",
+        "schedule": "4pm-8pm",
+        "description": "Dr. Naresh was also the founder, executive director, and chief cardiovascular surgeon of Escorts Heart Institute and Research Center (EHIRC), New Delhi, India. At present, he is serving as a Chairman and Managing Director and Chief Cardiac Surgeon of MedantaTM-The Medicity, one of the largest multi-specialty hospitals at Gurgaon, Haryana.",
+        "img": "https://i.ibb.co/9Z3gszQ/Dr-Naresh-Trehan.jpg"
+    },
+    {
+        "id": 3363734432,
+        "name": "Dr. Corrie T.M Anderson",
+        "schedule": "4pm-8pm",
+        "description": "In 2001, Dr. Anderson became the director of the program for Pediatric Pain Medicine in the Department of Anesthesiology at Seattle Children’s Hospital. He is also a professor of anesthesiology and associate professor of pediatrics at the University of Washington School of Medicine.",
+        "img": "https://i.ibb.co/PWHntjV/DR-CORRIE-T-M-ANDERSON.jpg"
+    }
+]
