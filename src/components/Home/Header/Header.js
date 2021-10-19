@@ -7,10 +7,11 @@ import { Link, NavLink, } from 'react-router-dom';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import useFirebase from '../../../hooks/useFirebase';
+import useAuth from '../../../hooks/useAuth';
 
 const Header = () => {
     const element = <FontAwesomeIcon icon={faSearch} />
-    const { user, logOut } = useFirebase()
+    const { user, logOut } = useAuth()
     return (
 
         <div className="header" >
@@ -19,10 +20,10 @@ const Header = () => {
             </div>
             <div className="hedar-navigation">
                 <Nav.Link as={HashLink} to="/home#home" className="text-white navbar">Home</Nav.Link>
-                <Nav.Link as={HashLink} to="/home#services" className="text-white navbar">services</Nav.Link>
-                <Nav.Link as={HashLink} to="/catagory" className="text-white navbar">catagory</Nav.Link>
-                <Nav.Link as={HashLink} to="/home#about" className="text-white navbar">Doctors</Nav.Link>
-                <Nav.Link as={HashLink} to="/home#contacts" className="text-white navbar">contacts</Nav.Link>
+                <Nav.Link as={HashLink} to="/service" className="text-white navbar">Services</Nav.Link>
+                <Nav.Link as={HashLink} to="/catagory" className="text-white navbar">Catagory</Nav.Link>
+                <Nav.Link as={HashLink} to="specialist" className="text-white navbar">Specialist</Nav.Link>
+                <Nav.Link as={HashLink} to="/about" className="text-white navbar">About</Nav.Link>
                 {user.email ?
                     <button onClick={logOut} className="btn btn-danger">
                         LogOut

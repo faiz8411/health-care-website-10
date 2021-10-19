@@ -10,8 +10,14 @@ import Schedule from './components/Schedule/Schedule';
 import Login from './components/Login/Login';
 import ServicDetails from './components/ServiceDtails/ServicDetails';
 import DoctorDetails from './components/Doctordetails/DoctorDetails';
-import AuthProvider from './components/AuthProvider/AuthProvider';
+
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Specialist from './components/Specialist/Specialist';
+import Footer from './components/Home/Footer/Footer';
+import About from './components/About/About';
+import Activities from './components/Activities/Activities';
+import AuthProvider from './context/AuthProvider';
+import NotFound from './components/NotFound/NotFound';
 
 
 function App() {
@@ -19,6 +25,7 @@ function App() {
     <div className="App">
 
       <AuthProvider>
+
         <Router>
           <Header></Header>
           <Switch>
@@ -28,9 +35,7 @@ function App() {
             <Route exact path="/home">
               <Home></Home>
             </Route>
-            <Route path="/services">
-              <Services></Services>
-            </Route>
+
             <PrivateRoute path="/service/:serviceId">
               <ServicDetails></ServicDetails>
             </PrivateRoute>
@@ -45,13 +50,24 @@ function App() {
               <Login></Login>
             </Route>
 
-
-
+            <Route exact path="/specialist">
+              <Specialist></Specialist>
+            </Route>
+            <Route exact path="/service">
+              <Activities></Activities>
+            </Route>
+            <Route exact path="/about">
+              <About></About>
+            </Route>
+            <Route exact path="*">
+              <NotFound></NotFound>
+            </Route>
           </Switch>
+          <Footer></Footer>
 
         </Router>
-      </AuthProvider>
 
+      </AuthProvider>
     </div>
   );
 }

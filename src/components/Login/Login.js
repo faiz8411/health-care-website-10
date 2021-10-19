@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory, useLocation } from 'react-router';
+import useAuth from '../../hooks/useAuth';
 import useFirebase from '../../hooks/useFirebase';
 
 const Login = () => {
@@ -8,8 +9,8 @@ const Login = () => {
         signInUsingGoogle,
         handleUserRegister,
         handleUserLogin,
-        logOut
-    } = useFirebase();
+
+    } = useAuth();
     const location = useLocation()
     const history = useHistory()
     const redirect_url = location.state?.from || '/home'
@@ -18,6 +19,7 @@ const Login = () => {
     const [password, setPassword] = useState("")
     const handleEmail = e => {
         setEmail(e.target.value)
+
     }
     console.log(email)
     const handlePassword = (e) => {
@@ -32,6 +34,7 @@ const Login = () => {
     console.log(password)
     const handleRegister = () => {
         handleUserRegister(email, password);
+
     };
     const handleLogin = () => {
         handleUserLogin(email, password);
@@ -43,6 +46,7 @@ const Login = () => {
         <div id="login" className="div d-flex justify-content-center align-items-center">
             <div className="row ">
                 <div className="col-md-6">
+                    <h4>please login or signup</h4>
                     <div>
                         <div className="form-input mt-5">
                             <input onChange={handleEmail}
@@ -78,7 +82,7 @@ const Login = () => {
                             >
                                 google sign in
                             </button>
-                            <button onClick={logOut}>logout</button>
+
 
                         </div>
                     </div>
@@ -87,7 +91,7 @@ const Login = () => {
                     <div className="right-side-image">
                         <img
                             className="w-100"
-                            src="https://i.pinimg.com/736x/21/20/b0/2120b058cb9946e36306778243eadae5.jpg"
+                            src="https://i.ibb.co/MSBbLcd/access-control-system-abstract-concept-illustration-security-system-authorize-entry-login-credential.jpg"
                             alt=""
                         />
                     </div>

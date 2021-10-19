@@ -19,7 +19,7 @@ const Doctor = ({ doctor }) => {
 
                     </Card.Text>
                 </Card.Body>
-                <Link to={`/doctor/${id}`}><button className="btn-success">click for details</button></Link>
+                <Link to={`/doctor/${id}`}><button className="btn-appoinment">click for details</button></Link>
             </Card>
         </CardGroup>
     );

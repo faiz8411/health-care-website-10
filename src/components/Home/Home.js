@@ -16,7 +16,7 @@ const Home = () => {
             <Services></Services>
             <Schedule></Schedule>
             <Doctors></Doctors>
-            <Footer></Footer>
+
         </div>
     );
 };

@@ -1,14 +1,10 @@
 import React from 'react';
-import { Card, CardGroup, Col, Container, ListGroup, ListGroupItem, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import "./Service.css"
+import { Card, CardGroup, Nav } from 'react-bootstrap';
+import { HashLink } from 'react-router-hash-link';
 
-const Service = ({ service }) => {
-    const { id, name, description, price, Img } = service;
-
-
+const Activity = ({ activity }) => {
+    const { name, Img, price, id, description } = activity
     return (
-
 
         <CardGroup>
             <Card className="m-2" >
@@ -22,13 +18,15 @@ const Service = ({ service }) => {
                     <Card.Text>
                         <p>{description}</p>
 
+
                     </Card.Text>
                 </Card.Body>
-                <Link to={`/service/${id}`}><button className="btn-appoinment ">click for details</button></Link>
+                <Nav.Link as={HashLink} to="/login" className="text-white navbar"><button className="btn-appoinment">booking shedule</button></Nav.Link>
+
             </Card>
 
         </CardGroup>
     );
 };
 
-export default Service;
+export default Activity;

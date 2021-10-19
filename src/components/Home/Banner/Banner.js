@@ -3,11 +3,12 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 
-import { Carousel, Col, Form, Row } from 'react-bootstrap';
+import { Carousel, Col, Form, Nav, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import banner from '../../../banner/666-1.png'
 
 import './Banner.css'
+import { HashLink } from 'react-router-hash-link';
 
 const Banner = () => {
     const element = <FontAwesomeIcon icon={faLocationArrow} />
@@ -20,7 +21,7 @@ const Banner = () => {
                         <h2 className="text-warning">West Chester Health Center</h2>
                         <h5 className="text-white">As one of the Greater Cincinnati area's newer hospitals <br />, West Chester Hospital was designed with our patients' comfort in mind.</h5>
                         <h4 className="text-warning">if you need any medical emergency then</h4>
-                        <button className="btn btn-success">appointment here {element}</button>
+                        <Nav.Link as={HashLink} to="/service" className="text-white navbar"><button className="btn-appoinment px-5">apointment now</button></Nav.Link>
                     </div>
                     <div className="col-md-4">
                         <Form className="from-appointment">
