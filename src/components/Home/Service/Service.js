@@ -10,24 +10,27 @@ const Service = ({ service }) => {
     return (
 
 
-        <CardGroup>
-            <Card className="m-2" >
-                <Card.Img variant="top" src={Img} />
-                <Card.Body>
-                    <Card.Title>
-                        <h3>{name}</h3>
-                        <h5 className="text-warning">service cost: {price}</h5>
+        <div>
+            <CardGroup>
+                <Card className="m-2" >
+                    <Card.Img variant="top" src={Img} />
+                    <Card.Body>
+                        <Card.Title>
+                            <h3>{name}</h3>
+                            <h5 className="text-warning">service cost: {price}</h5>
 
-                    </Card.Title>
-                    <Card.Text>
-                        <p>{description}</p>
+                        </Card.Title>
+                        <Card.Text>
+                            <p>{description}</p>
 
-                    </Card.Text>
-                </Card.Body>
-                <Link to={`/service/${id}`}><button className="btn-appoinment ">click for details</button></Link>
-            </Card>
+                        </Card.Text>
+                    </Card.Body>
 
-        </CardGroup>
+                </Card>
+
+            </CardGroup>
+            <Link to={`/service/${id}`}><button className="btn-appoinment ">click for details</button></Link>
+        </div>
     );
 };
 

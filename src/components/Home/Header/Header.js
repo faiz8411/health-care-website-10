@@ -42,8 +42,7 @@ const Header = () => {
                             </Navbar.Text>
                         </Navbar.Collapse>
                         <Navbar.Brand href="#home" className="m-2">
-                            <input className=" search-Input" type="text" name="" id="" placeholder="search" />
-                            <button className=" search-Input">{element}</button>
+
                         </Navbar.Brand>
                         <Navbar.Toggle />
 
