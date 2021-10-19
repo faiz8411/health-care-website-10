@@ -13,11 +13,12 @@ const useFirebase = () => {
     const [isLoading, setIsLoading] = useState(true)
     const auth = getAuth()
     const signInUsingGoogle = () => {
-        const googleProvider = new GoogleAuthProvider
+        const googleProvider = new GoogleAuthProvider()
         return signInWithPopup(auth, googleProvider)
 
 
     }
+    console.log(user)
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, user => {
             if (user) {

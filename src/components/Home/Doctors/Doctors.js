@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Doctor from '../Doctor/Doctor';
+import './Doctors.css'
 
 const Doctors = () => {
     const [doctors, setDoctors] = useState([])

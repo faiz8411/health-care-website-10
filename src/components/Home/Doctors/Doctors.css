@@ -1,0 +1,14 @@
+@media only  screen and  (max-width:991px){
+    .service-container{
+        padding: 10px 20px;
+        flex-direction: column;
+
+    }
+}
+@media only  screen and  (max-width:688px){
+    .service-container{
+        padding: 10px 20px;
+        flex-direction: column;
+
+    }
+}
