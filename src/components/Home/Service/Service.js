@@ -10,10 +10,6 @@ const Service = ({ service }) => {
     return (
 
 
-
-
-
-
         <CardGroup>
             <Card className="m-2" >
                 <Card.Img variant="top" src={Img} />
@@ -28,7 +24,7 @@ const Service = ({ service }) => {
 
                     </Card.Text>
                 </Card.Body>
-                <Link><button className="btn-success">click for details</button></Link>
+                <Link to={`/service/${id}`}><button className="btn-success">click for details</button></Link>
             </Card>
 
         </CardGroup>
