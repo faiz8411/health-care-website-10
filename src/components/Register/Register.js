@@ -1,50 +1,37 @@
 import React, { useState } from 'react';
 import { Nav } from 'react-bootstrap';
 import { useHistory, useLocation } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../hooks/useAuth';
+import './Register.css'
 
-
-const Login = () => {
-    const {
-        user,
-        signInUsingGoogle,
-        handleUserRegister,
-        handleUserLogin,
-    } = useAuth();
+const Register = () => {
+    const { user, handleUserRegister, signInUsingGoogle } = useAuth()
     const location = useLocation()
     const history = useHistory()
     const redirect_url = location.state?.from || '/home'
-    // console.log(location.state?.from)
+
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-
-    const handleEmail = e => {
-        setEmail(e.target.value)
-
-    }
-    console.log(email)
-    const handlePassword = (e) => {
-        setPassword(e.target.value)
-    }
     const handleGoogleLogin = () => {
         signInUsingGoogle()
             .then(result => {
                 history.push(redirect_url)
             })
     }
-    // console.log(password)
+    const handleEmail = e => {
+        setEmail(e.target.value)
+
+    }
+
+    const handlePassword = (e) => {
+        setPassword(e.target.value)
+    }
     const handleRegister = () => {
         handleUserRegister(email, password);
 
     };
-    const handleLogin = () => {
-        handleUserLogin(email, password);
-    };
-    console.log(user)
-
-
-
     return (
         <div id="login" className="div d-flex justify-content-center align-items-center">
             <div className="row ">
@@ -68,27 +55,33 @@ const Login = () => {
                             />
                             <br />
                             <div className="login-regiater-btn mt-4">
+                                <button onClick={handleRegister}
 
-                                <button onClick={handleLogin} className="btn btn-success ms-1">
-                                    Login
+                                    className="btn btn-primary me-1"
+                                >
+                                    Register
                                 </button>
-                                <h4 className="text-success">Are you new in this site??</h4>
+
                             </div>
+                            <h4 className="text-danger">Already have Account??</h4>
                         </div>
-                        <div className="login-btn mt-4 d-flex">
-                            <Nav.Link as={HashLink} to="/register" className="text-white navbar"><button className="btn-login m-2 btn btn-success">Register</button></Nav.Link> <h2>or</h2>
+                        <div className="login-btn mt-3 d-flex">
+                            <Nav.Link as={HashLink} to="/login" className="text-white navbar"><button className="btn-login m-2 btn btn-primary">login</button></Nav.Link> <h2>or</h2>
+
                             <button onClick={handleGoogleLogin}
 
-                                className="btn-login m-2 btn btn-primary"
+                                className="btn btn-success m-2"
                             >
                                 google sign in
                             </button>
 
 
                         </div>
+
                     </div>
                 </div>
                 <div className="col-md-6">
+
                     <div className="right-side-image">
                         <img
                             className="w-100"
@@ -103,6 +96,4 @@ const Login = () => {
     );
 };
 
-
-
-export default Login;
+export default Register;

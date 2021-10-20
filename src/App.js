@@ -18,6 +18,8 @@ import About from './components/About/About';
 import Activities from './components/Activities/Activities';
 import AuthProvider from './context/AuthProvider';
 import NotFound from './components/NotFound/NotFound';
+import Register from './components/Register/Register';
+
 
 
 function App() {
@@ -58,6 +60,9 @@ function App() {
             </Route>
             <Route exact path="/about">
               <About></About>
+            </Route>
+            <Route exact path="/register">
+              <Register></Register>
             </Route>
             <Route exact path="*">
               <NotFound></NotFound>
