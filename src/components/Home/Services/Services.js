@@ -13,11 +13,10 @@ const Services = () => {
     return (
 
         <div>
-            <div>
-                <h2 className="text-success heading">our Activities</h2>
-                <hr />
-            </div>
+
+            <h2 className="text-success heading">our Activities</h2>
             <div className="service-container">
+
                 {
                     services.map(service => <Service
                         key={service.id}
