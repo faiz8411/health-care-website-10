@@ -1,8 +1,18 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App]( https://health-care--and-hospital.web.app).
+##PROJECT NAME:West Chester Health Center
 
-## Available Scripts
+## OUR SPECIALITIES :
+.Maternity Services
+.Orthopaedic Surgery
+.Robotic Surgery
+.ULTRASONOGRAPHY
+.ENDOSCOPY & COLONOSCOPY
+.BED & CABIN
+.NURSING
+## our Aproach
+Repealing key Medicare protections threatens Americans’ access to medicines. Read more. Medicare "negotiation" will create more problems at a time when we can least afford them. Medicare Part D. U.S. Health Care. Medicines for Seniors. Protect Patients.
 
 In the project directory, you can run:
 
