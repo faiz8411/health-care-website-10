@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App]( https://health-care--and-hospital.web.app).
+This project was bootstrapped with [West Chester Health Center]( https://health-care--and-hospital.web.app).
 ##PROJECT NAME:West Chester Health Center
 
 ## OUR SPECIALITIES :
